@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    <Button
+        android:id="@+id/btnFollowToOtherProfile"
+        android:layout_width="198dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/lnrOther"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_detailed_buy_background"
+        android:text="@string/_follow"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackFromOtherProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonOtherProfileSettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_settings" />
+
+
+    <ImageView
+        android:id="@+id/imgOtherProfileCover"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/imageButtonBackFromOtherProfile"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_profile_background"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtOtherProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButtonBackFromOtherProfile"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="100dp"
+        android:textColor="#042C5C"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtOtherProfileBiography"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/txtOtherProfileName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#042C5C"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/lnrOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgOtherProfileCover"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtOtherProfileBooksCount"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="456"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtOtherProfileFollowingCount"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="221"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtOtherrofileFollowersCount"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="45.6K"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtOtherProfilePresentsCount"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="222"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_books"
+                android:textAlignment="center"
+                android:textColor="#787878"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_following"
+                android:textAlignment="center"
+                android:textColor="#787878" />
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_followers"
+                android:textAlignment="center"
+                android:textColor="#787878" />
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_presents"
+                android:textAlignment="center"
+                android:textColor="#787878" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMessageToOtherProfile"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/lnrOther"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_message_background"
+        android:text="@string/_message"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOtherProfileBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnMessageToOtherProfile"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

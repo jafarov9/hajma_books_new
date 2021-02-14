@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "714244242398",
+    "firebase_url": "https://hajmabooks-46564.firebaseio.com",
+    "project_id": "hajmabooks-46564",
+    "storage_bucket": "hajmabooks-46564.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714244242398:android:39bd9ab0b3880675e17b4f",
+        "android_client_info": {
+          "package_name": "com.hajma.apps.hajmabooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714244242398-8kab2bge7m4rvlvjb8ho4kq23215ko18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hajma.apps.hajmabooks",
+            "certificate_hash": "c46e14b75da1e8b3d811936be003204122461e01"
+          }
+        },
+        {
+          "client_id": "714244242398-2r8immf6u5ld31eltjd4ompe3kut0uun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpy8AgLkVHGZvnAkA778j_kvQJkflHcHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714244242398-2r8immf6u5ld31eltjd4ompe3kut0uun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

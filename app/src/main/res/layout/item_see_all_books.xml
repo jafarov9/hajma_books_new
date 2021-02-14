@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/cardSeeAll">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imgSeeAllBooks"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seeall"></ImageView>
+
+        <TextView
+            android:id="@+id/txtSeeAllBooksName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:maxWidth="120dp"
+            android:maxLength="32"
+            android:text="The World of Abstract Art"
+            android:textSize="11sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnPriceSeeAllBooks"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_free_background"
+            android:text="@string/free"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

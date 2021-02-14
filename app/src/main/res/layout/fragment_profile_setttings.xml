@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonBackFromProfileSettings"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/_settings"
+                    android:textColor="#444444"
+                    android:textSize="32sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgSettingsProfilePicture"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imageButtonBackFromProfileSettings"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    tools:src="@drawable/ic_account_circle_black_24dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/txtChangeProfilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgSettingsProfilePicture"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/_change_profile_picture"
+                    android:textColor="#727E8B" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txtChangeProfilePicture"
+                    android:layout_marginTop="20dp"
+                    android:background="#E2E6EC" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/_username"
+                    android:textColor="#3D434A" />
+
+                <TextView
+                    android:id="@+id/txtUsernameSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Jonh doe"
+                    android:textColor="#727E8B"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txtUsernameSettings"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#E2E6EC" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/_name"
+                    android:textColor="#3D434A" />
+
+                <EditText
+                    android:id="@+id/etNameProfileSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textPersonName"
+                    android:text="Novruz"
+                    android:textColor="#727E8B"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/textView22"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#E2E6EC" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/_email"
+                    android:textColor="#3D434A" />
+
+                <TextView
+                    android:id="@+id/txtEmailProfileSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="novruz@mail.ru"
+                    android:textColor="#727E8B" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider4"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/_phone"
+                    android:textColor="#3D434A" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/textView18"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#E2E6EC" />
+
+                <EditText
+                    android:id="@+id/etSettingsPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textPersonName"
+                    android:text="0708582345"
+                    android:textColor="#727E8B"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/etSettingsPhoneNumber"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#E2E6EC" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/_language"
+                    android:textColor="#3D434A" />
+
+                <TextView
+                    android:id="@+id/txtSelectLanguage"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/divider5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:text="AZ"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSelectLanguage"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="@string/_change_password"
+                    android:textColor="#F15A6E" />
+
+                <Button
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnChangePassword"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="@string/_logout"
+                    android:textColor="#F15A6E" />
+
+                <Button
+                    android:id="@+id/btnSaveProfileDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnLogOut"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_sign_background"
+                    android:text="@string/_save"
+                    android:textColor="#FFFFFF" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

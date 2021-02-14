@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrNewBooks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12.7dp"
+        app:cardCornerRadius="5dp">
+
+
+        <ImageView
+            android:id="@+id/imgStandardBooks"
+            android:layout_width="122dp"
+            android:layout_height="177dp"
+            android:maxWidth="143dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/art_bookcover" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtCardStandardName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="6dp"
+        android:maxWidth="122dp"
+        android:maxLength="35"
+        android:padding="2dp"
+        android:text="The World of Abstract Art lorem ipsum soler"
+        android:textColor="#000000"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btnPrice"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_free_background"
+        android:text="@string/free"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+</LinearLayout>

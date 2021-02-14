@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrCart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnPriceShoppingCartBook"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/txtShoppingCartBookName"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@id/imgShoppingCart"
+                android:background="@drawable/btn_free_background"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txtAuthorNameShoppingCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgShoppingCart"
+                android:maxLength="40"
+                android:text="Daniel Heaken"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtShoppingCartBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAuthorNameShoppingCart"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imgShoppingCart"
+                android:maxLength="30"
+                android:text="The World of Abstract Art"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imgShoppingCart"
+                android:layout_width="70dp"
+                android:layout_height="99dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seeall">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
